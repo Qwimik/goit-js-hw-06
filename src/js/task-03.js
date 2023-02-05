@@ -22,5 +22,3 @@ const imagesEl = images
   .join('');
 
 galleryEl.insertAdjacentHTML('beforeend', imagesEl);
-
-console.log(galleryEl);
