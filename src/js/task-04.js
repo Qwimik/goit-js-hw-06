@@ -5,10 +5,10 @@ const incrementBtnEl = document.querySelector('[data-action="increment"]');
 let counterValue = 0;
 const stepCount = 1;
 
-decrementBtnEl.addEventListener('click', onClickBtn);
-incrementBtnEl.addEventListener('click', onClickBtn);
+decrementBtnEl.addEventListener('click', onBtnClick);
+incrementBtnEl.addEventListener('click', onBtnClick);
 
-function onClickBtn(e) {
+function onBtnClick(e) {
   if (e.currentTarget.dataset.action === 'decrement') {
     counterValue -= stepCount;
   }
